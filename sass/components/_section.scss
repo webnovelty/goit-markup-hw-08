@@ -1,0 +1,18 @@
+.section {
+  padding-top: 93px;
+  padding-bottom: 93px;
+}
+.section--pos {
+  padding-bottom: 0;
+}
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $menu-color;
+}
+.section--bgcolor {
+  background-color: #f5f4fa;
+}
