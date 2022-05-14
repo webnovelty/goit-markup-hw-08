@@ -859,6 +859,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
+    margin-bottom: 2px;
   }
 }
 
@@ -883,7 +884,7 @@ body {
     margin-bottom: 30px;
   }
   .team__item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
 }
 
