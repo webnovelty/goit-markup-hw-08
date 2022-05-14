@@ -25,46 +25,42 @@
 					</svg>
 				</button>
 				<div class="menu-container" data-menu>
-					<div class="mob-menu-top">
-						<ul class="site-nav">
-							<li class="site-nav__item"><a href="./index.html"
-									class="site-nav__link site-nav__link--active">Студия</a></li>
-							<li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-							</li>
-							<li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-						</ul>
-					</div>
-					<div class="mob-menu-bottom">
-						<ul class="contact-mob">
-							<li class="contact-mob__item"><a href="tel:+380961111111" class="contact-mob__link ">
-									+38 096 111 11 11</a></li>
-							<li class="contact-mob__item">
-								<a href="mailto:info@devstudio.com" class="contact-mob__link contact-mob__link--style">
-									info@devstudio.com</a>
-							</li>
 
+					<ul class="site-nav">
+						<li class="site-nav__item"><a href="./index.html"
+								class="site-nav__link site-nav__link--active">Студия</a></li>
+						<li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+						</li>
+						<li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+					</ul>
+					<ul class="contact-mob">
+						<li class="contact-mob__item"><a href="tel:+380961111111" class="contact-mob__link ">
+								+38 096 111 11 11</a></li>
+						<li class="contact-mob__item">
+							<a href="mailto:info@devstudio.com" class="contact-mob__link contact-mob__link--style">
+								info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="social-mob">
+						<li class="social-mob__item"><a href="" class="social-mob__link">Instagram</a></li>
+						<li class="social-mob__item"><a href="" class="social-mob__link">Twitter</a></li>
+						<li class="social-mob__item"><a href="" class="social-mob__link">Facebook</a></li>
+						<li class="social-mob__item"><a href="" class="social-mob__link">LinkedIn</a></li>
+					</ul>
 
-						</ul>
-						<ul class="social-mob">
-							<li class="social-mob__item"><a href="" class="social-mob__link">Instagram</a></li>
-							<li class="social-mob__item"><a href="" class="social-mob__link">Twitter</a></li>
-							<li class="social-mob__item"><a href="" class="social-mob__link">Facebook</a></li>
-							<li class="social-mob__item"><a href="" class="social-mob__link">LinkedIn</a></li>
-						</ul>
-					</div>
 				</div>
 			</nav>
 			<ul class="contact">
 				<li class="contact__item">
 					<a href="mailto:info@devstudio.com" class="contact__link">
-						<svg class="contact__icon" height="12px" width="16px">
+						<svg class="contact__icon">
 							<use href="./img/icons/symbol-defs.svg#icon-email"></use>
 						</svg>
 						info@devstudio.com</a>
 				</li>
 
 				<li class="contact__item"><a href="tel:+380961111111" class="contact__link">
-						<svg class="contact__icon" height="16px" width="10px">
+						<svg class="contact__icon contact__icon--size">
 							<use href="./img/icons/symbol-defs.svg#icon-phone"></use>
 						</svg>
 						+38 096 111 11 11</a></li>
@@ -141,23 +137,34 @@
 				<ul class="craft">
 					<li class="craft__item">
 						<div class="craft__overlay">
-							<img src="./img/what_1.jpg" alt="Клавиатура, планшет, монитор" width="370" />
+							<picture>
+								<source srcset="../img/craft/craft1-desktop.jpg 1x, 
+														 ../img/craft/craft1-desktop2x.jpg 2x">
+								<img src="./img/craft/craft1-desktop.jpg" alt="Клавиатура, планшет, монитор" />
+							</picture>
 							<h3 class="craft__content">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
-
 						</div>
 					</li>
 					<li class="craft__item">
 						<div class="craft__overlay">
-							<img src="./img/what_2.jpg" alt="Девушка держит телефон, сидит за ноутбуком" width="370" />
+							<picture>
+								<source srcset="../img/craft/craft2-desktop.jpg 1x, 
+																					 ../img/craft/craft2-desktop2x.jpg 2x">
+								<img src="./img/craft/craft2-desktop.jpg"
+									alt="Девушка держит телефон, сидит за ноутбуком" />
+							</picture>
 							<h3 class="craft__content">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
-
 						</div>
 					</li>
 					<li class="craft__item">
 						<div class="craft__overlay">
-							<img src="./img/what_3.jpg" alt="Цветовая палитра изображена в планшете" width="370" />
+							<picture>
+								<source srcset="../img/craft/craft3-desktop.jpg 1x, 
+																												 ../img/craft/craft3-desktop2x.jpg 2x">
+								<img src="./img/craft/craft3-desktop.jpg"
+									alt="Цветовая палитра изображена в планшете" />
+							</picture>
 							<h3 class="craft__content">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
-
 						</div>
 					</li>
 				</ul>
@@ -167,7 +174,7 @@
 		<!-- Наша команда -->
 		<section class="section section--bgcolor">
 			<div class="container">
-				<h2 class="section__title">Наша команда</h2>
+				<h2 class="section__title section__title--range">Наша команда</h2>
 				<ul class="team">
 					<li class="team__item">
 						<picture>

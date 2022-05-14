@@ -1,13 +1,14 @@
 .site-nav {
   margin-bottom: 302px;
   color: $menu-color;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
+    margin-left: 88px;
     margin-top: 0;
     margin-bottom: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 93px;
   }
 }
@@ -17,9 +18,23 @@
     margin-bottom: 0;
   }
 }
-.site-nav__item,
+.site-nav__item {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 .contact__item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $desktop) {
     margin-bottom: 0;
     margin-right: 50px;
     &:last-child {
@@ -34,7 +49,7 @@
   font-size: 40px;
   line-height: 1.17;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 32px;
     padding-bottom: 32px;
     line-height: 1.14;
@@ -64,7 +79,7 @@
   &:hover {
     color: $lg-color;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     line-height: 1.14;
     font-size: 14px;
   }
@@ -91,24 +106,26 @@
   &:active {
     fill: $lg-color;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 .contact-mob {
   margin-bottom: 64px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 .contact {
   display: none;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+  @media screen and (min-width: $tablet) {
+    display: block;
     margin-left: auto;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
   }
 }
 .contact-mob__item {
@@ -135,6 +152,8 @@
 .contact__link {
   display: flex;
   font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
   color: $content-color;
   padding: 32px 0 32px 0;
   align-items: center;
@@ -143,13 +162,38 @@
   &:hover {
     color: $lg-color;
   }
+  @media screen and (min-width: $tablet) {
+    padding: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
+  @media screen and (min-width: $tablet) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contact__icon--size {
+  @media screen and (min-width: $tablet) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 10px;
+    height: 16px;
+  }
 }
 .menu-container {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.9px) {
     position: absolute;
     display: none;
     top: 0;
@@ -163,15 +207,15 @@
       display: block;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
   }
 }
 .social-mob {
   display: flex;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -194,8 +238,4 @@
   line-height: 1.22;
   font-weight: 500;
   color: $lg-color;
-}
-.mob-menu-top {
-}
-.mob-menu-bottom {
 }

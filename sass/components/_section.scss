@@ -1,13 +1,15 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 93px;
     padding-bottom: 93px;
   }
 }
 .section--pos {
-  padding-bottom: 0;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 .section__title {
   font-weight: 700;
@@ -16,7 +18,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $menu-color;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $desktop) {
     font-size: 36px;
   }
 }
@@ -24,7 +26,7 @@
   background-color: #f5f4fa;
 }
 .section--visible {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199.9px) {
     display: none;
   }
 }
