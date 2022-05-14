@@ -42,7 +42,7 @@
     &::after {
       position: absolute;
       left: 0;
-      bottom: -1px;
+      bottom: 0;
       content: '';
       display: block;
       width: 100%;
@@ -194,4 +194,8 @@
   line-height: 1.22;
   font-weight: 500;
   color: $lg-color;
+}
+.mob-menu-top {
+}
+.mob-menu-bottom {
 }
