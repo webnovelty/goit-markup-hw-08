@@ -50,6 +50,9 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (max-width: 1199.9px) {
+    text-align: center;
+  }
 }
 .footer__icon {
   fill: currentColor;
