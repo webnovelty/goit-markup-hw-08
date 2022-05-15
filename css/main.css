@@ -410,12 +410,12 @@ body {
 }
 
 .menu-button {
+  z-index: 2;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0;
   padding: 0;
-  z-index: 2;
   border: none;
   background-color: transparent;
 }
