@@ -20,7 +20,7 @@
 	<header class="header">
 		<div class="container header__container">
 			<nav class="header__nav">
-				<a href="./index.html" class="logo header__logo">Web<spin class="logo logo--color">Studio</spin></a>
+				<a href="./index.html" class="logo header__logo">Web<span class="logo logo--color">Studio</span></a>
 
 				<button type="button" class="menu-button" aria-expanded="false" data-menu-button>
 					<svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -305,7 +305,7 @@
 		<div class="container container--pos">
 			<div class="footer__firstblock">
 				<h2 class="visually-hidden">Футер</h2>
-				<a href="./index.html" class="logo footer__logo">Web<spin class="logo logo--footcolor">Studio</spin></a>
+				<a href="./index.html" class="logo footer__logo">Web<span class="logo logo--footcolor">Studio</span></a>
 				<address>
 					<ul>
 						<li>
@@ -366,6 +366,7 @@
 					</button>
 				</form>
 			</div>
+		</div>
 	</footer>
 	<div class="backdrop backdrop__is-hidden" data-modal>
 		<div class="modal">
@@ -411,7 +412,7 @@
 				</label>
 				<label class="modal__label modal__label--margin">
 					<span class="modal__label-content">Комментарий</span>
-					<textarea type="text-area" name="comment" placeholder="Введите текст"></textarea>
+					<textarea name="comment" placeholder="Введите текст"></textarea>
 				</label>
 				<label class="modal__policy-label">
 					<input class="modal__checkbox" type="checkbox" name="policy">
@@ -420,9 +421,9 @@
 							<use href="./img/icons/symbol-defs.svg#icon-checkfull"></use>
 						</svg>
 					</span>
-					<p class="modal__policy-content">Соглашаюсь с рассылкой и принимаю <a href=""
+					<span class="modal__policy-content">Соглашаюсь с рассылкой и принимаю <a href=""
 							class="modal__policy-link">Условия договора</a>
-					</p>
+					</span>
 				</label>
 				<button type="submit" class="modal__button">Отправить</button>
 			</form>
