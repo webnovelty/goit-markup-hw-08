@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    margin-bottom: 2px;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -14,7 +13,7 @@
   @media screen and (max-width: 767.9px) {
     margin-bottom: 30px;
     &:last-child {
-      margin-bottom: 2px;
+      margin-bottom: 0;
     }
   }
   background-color: #ffffff;
@@ -28,7 +27,6 @@
   }
   @media screen and (min-width: $desktop) {
     margin-right: 30px;
-    margin-bottom: 1px;
     &:last-child {
       margin-right: 0;
     }
